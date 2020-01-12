@@ -1,5 +1,8 @@
 version: "3"
 services:
+  config-server:
+    image: spring-cloud-example/config-server:latest
+    network_mode: "host"
   app:
-    build: ./docker
+    image: spring-cloud-example/app:latest
     network_mode: "host"

@@ -1,7 +1,7 @@
 FROM openjdk:11-jre
 
 
-ADD ./boot.sh /srv/app/
+ADD boot.sh /srv/app/
 ADD ./app.jar /srv/app/
 
 
