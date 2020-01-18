@@ -10,7 +10,7 @@ import org.springframework.cloud.stream.messaging.Sink;
 @Slf4j
 @EnableBinding(Sink.class)
 @SpringBootApplication
-public class App {
+public class SinkApp {
 
     @StreamListener(Sink.INPUT)
     public void loggerSink(String date) {
@@ -19,6 +19,6 @@ public class App {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(SinkApp.class, args);
     }
 }

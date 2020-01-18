@@ -1,4 +1,7 @@
 rootProject.name = 'spring-cloud-example'
 include 'config-server'
 include 'app'
+include 'data-source'
+include 'data-flow-processor'
+include 'sink'
 
